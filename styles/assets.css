@@ -1,0 +1,119 @@
+/* Component Styles */
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  z-index: 2;
+  color: var(--text-primary);
+}
+
+.main-dark {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.policy {
+  text-align: left;
+  padding-inline: 0.25rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  color: var(--text-primary);
+}
+
+#button-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.button {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--bg-secondary);
+  border: outset 1px var(--accent-medium);
+  color: var(--accent-medium);
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 0 1.25rem var(--accent-light);
+  border: inset 1px var(--accent-light);
+  color: var(--accent-light);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  border: outset 2px var(--grey);
+  box-shadow: none;
+}
+
+.content-box {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--bg-primary);
+  border: solid 1px var(--accent-medium);
+  color: var(--accent-light);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.text-input {
+  padding: 0.25rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  background-color: var(--bg-secondary);
+  border: solid 1px var(--accent-medium);
+  color: var(--accent-medium);
+  transition: border-color 0.3s ease;
+}
+
+.text-input:focus {
+  box-shadow: 0 0 1.25rem var(--accent-medium);
+  border: solid 1px var(--accent-medium);
+  outline: none;
+}
+
+.card {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  text-shadow: 0.25rem 0.25rem 0.5rem var(--shadow-white);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+/* Utility Classes */
+
+.dnone {
+  display: none;
+}

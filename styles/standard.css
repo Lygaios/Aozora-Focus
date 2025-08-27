@@ -1,0 +1,121 @@
+:root {
+  /* Accent Colours */
+  --accent-light: #7dfdde;
+  --accent-medium: #4bcfab;
+  --accent-medium-dark: #2b6d52;
+  --accent-dark: #08231c;
+  
+  /* Background Colours */
+  --bg-primary: #08090b;
+  --bg-secondary: #08231c;
+  --bg-black: #000000;
+
+  /*Text Colours */
+  --text-primary: #fcfffe;
+  --text-secondary: #d6fff5;
+  
+  /* Neutral Colours */
+  --grey: #aaa;
+  
+  /* Overlay Colours */
+  --overlay-bg: rgba(0, 0, 0, 0.3);
+  --shadow-black: rgba(0, 0, 0, 0.9);
+  --shadow-white: rgba(255, 255, 255, 0.3);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  gap: 0.5rem;
+}
+
+.body-main {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.body-plain {
+  background-image: none;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url(../assets/fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0.25rem 0.25rem 0.5rem var(--shadow-white);
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-medium);
+}
+
+a:visited {
+  color: var(--accent-medium-dark);
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--accent-light);
+}
+
+.external-link::after {
+  content: " ↗";
+  font-size: 0.85rem;
+  color: inherit;
+  margin-left: 0.125rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

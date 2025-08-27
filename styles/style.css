@@ -1,0 +1,84 @@
+
+/* Layout Styles - Page Structure */
+
+#header {
+  min-height: 6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-inline: 0.5rem;
+  margin: 0;
+}
+
+#footer {
+  height: 6rem;
+  padding-inline: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+#main {
+  flex-grow: 1;
+  max-width: 90rem;
+  width: 100%;
+  padding-inline: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Responsive Utilities */
+
+@media (max-width: 700px) {
+  .hidemobile {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) {
+  .hidedesktop {
+    display: none;
+  }
+}
+/* 
+  🔧 Common Responsive Breakpoints Cheat Sheet
+
+  These are not strict rules, just helpful starting points for targeting devices:
+
+  @media (max-width: 1440px) → Large desktops / wide monitors
+  @media (max-width: 1024px) → Laptops, tablets (landscape)
+  @media (max-width: 768px)  → Tablets (portrait), smaller screens
+  @media (max-width: 600px)  → Small tablets, big phones
+  @media (max-width: 480px)  → Most smartphones (landscape/portrait)
+  @media (max-width: 375px)  → iPhone SE, small devices
+  @media (max-width: 320px)  → Absolute minimum screen width to support
+
+  Tip: Adjust these breakpoints based on your layout and when things start to look squishy!
+*/
