@@ -54,6 +54,14 @@
   box-sizing: border-box;
 }
 
+#main-window {
+  background-image: url("../assets/img/terrace.png");
+  background-size: cover;
+  background-position: center;
+  width: 80rem;
+  height: 50rem;
+}
+
 /* Responsive Utilities */
 
 @media (max-width: 700px) {
