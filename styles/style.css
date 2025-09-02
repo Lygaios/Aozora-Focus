@@ -95,6 +95,7 @@
   #main-window {
     width: 40rem;
     height: 30rem;
+      padding-inline: 0.5rem;
   }
 }
 
@@ -102,6 +103,20 @@
   #main-window {
     width: 30rem;
     height: 20rem;
+  }
+}
+
+@media (max-width: 530px) {
+  #main-window {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 375px) {
+  #main-window {
+    width: 15rem;
+    height: 10rem;
   }
 }
 
